@@ -1,7 +1,4 @@
 version: "2"
-networks:
-  web:
-    external: true
 
 services:
   caddy:
@@ -11,10 +8,14 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /data/caddy/Caddyfile:/etc/caddy/Caddyfile
-      - /data/caddy/data:/data
-      - /data/caddy/config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - certs-volume:/data
     networks:
       - web
 
+volumes:
+  certs-volume:
 
+networks:
+  web:
+    external: true
