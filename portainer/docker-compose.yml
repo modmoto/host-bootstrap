@@ -4,12 +4,14 @@ services:
     image: portainer/portainer-ce
     container_name: portainer
     restart: always
-    ports:
-      - "1000:80"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data portainer/portainer
     entrypoint: /portainer -p :80
+    networks:
+      - web
+    ports:
+      - "1000:80"
 
 volumes:
   portainer_data:
