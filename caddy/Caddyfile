@@ -9,6 +9,10 @@ fading-flame.com {
     reverse_proxy portainer:1000
 }
 
+www.fading-flame.com {
+    reverse_proxy portainer:1000
+}
+
 smallhetzi.fading-flame.com {
     reverse_proxy portainer:1000
 }
