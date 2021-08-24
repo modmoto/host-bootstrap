@@ -13,3 +13,7 @@ services:
 
 volumes:
   portainer_data:
+
+networks:
+  web:
+    external: true
