@@ -1,0 +1,10 @@
+{
+    # Global options block. Entirely optional, https is on by default
+    # Optional email key for lets encrypt
+    email simonheiss87@gmail.com
+    # acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+smallhetzi.fading-flame.com {
+    reverse_proxy portainer:1000
+}

@@ -1,0 +1,11 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'HetziPrivate'
+    contents: '**'
+    readyTimeout: '20000'
+    targetFolder: '/usr/local/docker-compose-files'
+    cleanTargetFolder: true
