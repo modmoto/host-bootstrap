@@ -6,19 +6,10 @@ services:
     restart: always
     ports:
       - "80:1000"
-    environment:
-      - VIRTUAL_HOST=bigboi.w3champions.com
-      - LETSENCRYPT_HOST=bigboi.w3champions.com
-      - LETSENCRYPT_EMAIL=simonheiss87@gmail.com
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data portainer/portainer
     entrypoint: /portainer -p :80
-
-networks:
-  default:
-    external:
-      name: nginx-proxy
 
 volumes:
   portainer_data:
