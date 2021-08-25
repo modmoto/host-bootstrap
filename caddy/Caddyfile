@@ -4,11 +4,11 @@
 }
 
 smallhetzi.fading-flame.com {
-    reverse_proxy portainer:1000
+    reverse_proxy http://portainer:1000
 }
 
 fading-flame.com {
-    reverse_proxy test-fading-flame:1100
+    reverse_proxy fading-flame:1100
 }
 
 test.fading-flame.com {
