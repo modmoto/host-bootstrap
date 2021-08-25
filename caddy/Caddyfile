@@ -8,9 +8,9 @@ smallhetzi.fading-flame.com {
 }
 
 fading-flame.com {
-    reverse_proxy http://fading-flame
+    reverse_proxy http://fading-flame-prod
 }
 
 test.fading-flame.com {
-    reverse_proxy http://test-fading-flame
+    reverse_proxy http://fading-flame-dev
 }
