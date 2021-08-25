@@ -1,4 +1,4 @@
-docker network create web
+docker network create caddy
 cd ./caddy
 docker-compose up -d
 
