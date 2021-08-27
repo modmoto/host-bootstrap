@@ -14,3 +14,11 @@ fading-flame.com {
 test.fading-flame.com {
     reverse_proxy http://fading-flame-dev
 }
+
+identity.fading-flame.com {
+    reverse_proxy http://identity-server-prod
+}
+
+test.identity.fading-flame.com {
+    reverse_proxy http://identity-server-dev
+}
