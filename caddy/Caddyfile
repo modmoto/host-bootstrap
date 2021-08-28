@@ -16,9 +16,9 @@ test.fading-flame.com {
 }
 
 identity.fading-flame.com {
-    reverse_proxy https://identity-server-prod:80
+    reverse_proxy http://identity-server-prod
 }
 
 test.identity.fading-flame.com {
-    reverse_proxy https://identity-server-dev:80
+    reverse_proxy http://identity-server-dev
 }
