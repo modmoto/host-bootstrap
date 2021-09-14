@@ -13,5 +13,6 @@
   - `sudo apt-get update`
   - `sudo apt-get install -y mongodb-org`
 - `chmod 744 /usr/local/docker-compose-files/db-backups/RunDatbaseBackup.sh`
+- `mkdir /usr/local/db-backups/`
 - `crontab -e`
-- add a cron job like `30 7 * * * bash /usr/local/docker-compose-files/db-backups/RunDatbaseBackup.sh "mongodb://admin:rUYV3wGkEESvXyqr@65.21.139.246:1000/" ./fading-flame-service` for each DB
+- add a cron job like `30 7 * * * bash /usr/local/docker-compose-files/db-backups/RunDatbaseBackup.sh "mongodb://admin:GEWgqaEwsHFNV6Yq@65.21.139.246:2000/" ./identity-service` for each DB
