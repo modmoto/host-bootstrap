@@ -22,3 +22,7 @@ identity.fading-flame.com {
 test.identity.fading-flame.com {
     reverse_proxy http://identity-server-dev
 }
+
+modmoto.dev {
+    reverse_proxy http://portainer
+}
