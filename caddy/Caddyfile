@@ -30,7 +30,3 @@ www.modmoto.dev {
 modmoto.dev {
     reverse_proxy http://portainer
 }
-
-test.modmoto.dev {
-    reverse_proxy http://portainer
-}
