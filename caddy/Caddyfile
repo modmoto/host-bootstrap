@@ -3,7 +3,7 @@
     # acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
 }
 
-smallhetzi.fading-flame.com {
+smallhetzi.modmoto.dev {
     reverse_proxy http://portainer
 }
 
