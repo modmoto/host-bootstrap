@@ -8,4 +8,5 @@
 
 ## Setting up backup scripts
 - install mongo to have the tools (container sucked so far)
-- run a cron job with:
+- crontab -e
+- add a cron job like `30 7 * * * bash /usr/local/docker-compose-files/DbBackups/RunDatbaseBackup.sh "connectionstring" ./identity-server` for each DB

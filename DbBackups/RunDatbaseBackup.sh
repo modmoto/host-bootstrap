@@ -8,8 +8,7 @@ echo "created $today in $(pwd)"
 
 pushd $today
 
-mongodump --uri="$1" -o ./identity-service
-mongodump --uri="$2" -o ./fading-flame-service
+mongodump --uri=$1 -o $2
 
 popd
 
