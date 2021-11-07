@@ -30,3 +30,11 @@ www.modmoto.dev {
 modmoto.dev {
     reverse_proxy http://portainer
 }
+
+test.battlemate.fading-flame.com {
+    reverse_proxy http://battle-mate-dev
+}
+
+battlemate.fading-flame.com {
+    reverse_proxy http://battle-mate-prod
+}
