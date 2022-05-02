@@ -46,3 +46,11 @@ test.battle-mate.com {
 battle-mate.com {
     reverse_proxy http://battle-mate-prod
 }
+
+test.itworksonmymachine.org {
+    reverse_proxy http://it-works-on-my-machine-org-dev
+}
+
+itworksonmymachine.org {
+    reverse_proxy http://it-works-on-my-machine-org-prod
+}
