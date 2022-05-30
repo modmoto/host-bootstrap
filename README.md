@@ -16,3 +16,19 @@
 - `mkdir /usr/local/db-backups/`
 - `crontab -e`
 - add a cron job like `30 7 * * * bash /usr/local/docker-compose-files/db-backups/RunDatbaseBackup.sh "mongodb://admin:secret@ip:port/" ./identity-service` for each DB
+
+## Setuph SSH
+- mkdir .ssh
+- cd .ssh
+- touch config
+- vim config
+  ```
+  Host shetzi
+    Hostname 65.21.139.246
+    User root
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/shetzi.ed25519
+  ```
+- ssh-keygen -t ed25519 -a 420 -f ./shetzi.ed25519 -C "root key simon"
+- ssh-copy-id -i shetzi.ed25519.pub shetzi
+- ssh-add ./shetzi.ed25519
